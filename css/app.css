@@ -1,0 +1,285 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h3
+{
+	font-family: 'Bree Serif', serif;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+	color: white;
+}
+
+/*Logos de redes sociales*/
+#social-container
+{
+	background-color: #FF405C;
+}
+
+.callout
+{
+	color: white;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+#logo-container .callout
+{
+	background-color: #FF405C;
+	border: 1px solid rgba(191, 45, 67, .3);
+}
+
+/*Barra de menus*/
+#menu-container
+{
+	background-color: #1C3C4B;
+}
+
+#menu-container ul > li
+{
+	position: relative;
+}
+
+#menu-container ul > li > a > span
+{
+	color: #FF405C;
+	background: #FFC20D;
+	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 0%;
+  	line-height: 40px;
+  	transition: .5s;
+  	overflow: hidden;
+}
+
+#menu-container ul > li > a:hover > span
+{
+	height: 100%;
+}
+
+#menu-container ul > li > ul > li > a:hover
+{
+	color: #FFC20D;
+}
+
+#menu-oculto
+{
+	background-color: #1C3C4B;
+	border: 0;
+}
+
+/*sección de compra de boletas cta*/
+#boton-action .callout
+{
+	background-color: #FFC20D;	
+	background-image: url(../img/cta.png);
+}
+
+#boton-action .callout a
+{
+	color: white;
+	border-color: white;
+}
+
+#boton-action .callout a:hover
+{
+	background-color: #fcdf88;
+}
+
+/*line-up*/
+
+#line-up-container
+{
+	padding: 3em 0;
+	background-color: #171717;
+}
+
+#line-up-container .tabs, 
+#line-up-container .tabs-content,
+#line-up-container .tabs .tabs-title.is-active a 
+{
+	background-color: inherit;	
+	border: 0;
+	color: white;
+}
+
+#line-up-container .tabs .tabs-title.is-active a
+{
+	/*box-shadow: 0 2px 0 white;*/
+	-webkit-box-shadow: 0 2px 0 0 rgba(255,255,255,1);
+	box-shadow: 0 2px 0 0 rgba(255,255,255,1);
+}
+
+#line-up-container .tabs .tabs-title
+{
+	float: none;
+	display: inline-block;
+}
+
+#line-up-container .tabs .tabs-title a
+{
+	font-size: 18px;
+}
+
+#line-up-container .tabs .tabs-title a:hover
+{
+	background-color: inherit;
+	color: white;
+	box-shadow: 0 2px 0 white;
+}
+
+#line-up-container .orbit-container
+{
+	margin-bottom: 1em;
+}
+
+#line-up-container .column:nth-child(odd) figcaption
+{
+	text-align: right;
+}
+/*Cierre - Line Up*/
+
+/*Bug de fundation orbit no funciona en tabs*/
+.orbit-container {
+    height: auto !important;
+}
+.orbit-slide {
+    max-height: none !important;
+}
+/*/Bug de fundation orbit no funciona en tabs*/
+
+/*http://www.colourlovers.com/palette/1002349/Electric_Feel*/ 
+
+/*Tabla de precios*/
+#tickets-container
+{
+	padding: 1em 0;
+	background: url(../img/space-4.jpg) fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#tickets-container h3
+{
+	margin-bottom: 1.5em;
+}
+
+.pricing-table {
+  background-color: #fefefe;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  margin-left: 0; 
+}
+
+.pricing-table li {
+  border-bottom: dotted 1px #cacaca;
+  padding: 0.875rem 1.125rem;
+  font-size: 1em;
+}
+
+.pricing-table li:last-child {
+  border-bottom: 0;
+}
+
+.pricing-table .title {
+  background-color: #171717;
+  color: #fefefe;
+  border-bottom: 0;
+  font-size: 1rem;
+}
+
+.pricing-table .price {
+  background-color: #FF9012;
+  border-bottom: 0;
+  color: white;
+}
+
+.pricing-table .description {
+  color: #8a8a8a;
+  font-size: 80%;
+}
+
+.pricing-table :last-child {
+  margin-bottom: 0;
+}
+
+.pricing-table .button,
+#suscripcion-container .input-group .button
+{
+	background-color: #00ADCC;
+}
+
+.pricing-table .button:hover,
+#suscripcion-container .input-group .button:hover
+{
+	background-color: #017b91;	
+}
+
+/*Mapa*/
+#info-container
+{
+	
+	background-color: #1C3C4B;
+	padding-top: .7em;
+}
+
+#info-container h3
+{
+	margin-bottom: .7em;
+}
+
+#info-container .map-container iframe
+{
+	width: 100%;
+}
+
+/*suscripcion*/
+#suscripcion-container
+{
+	background-color: #FFC20D;
+	padding: 2.5em 0;
+}
+
+#suscripcion-container p
+{
+	color: #fff;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+	font-size: 1.1em;
+}
+
+#suscripcion-container .input-group
+{
+	margin-bottom: 0;
+}
+
+#suscripcion-container .error-container
+{
+	color: red;
+	font-size: 18px;
+}
+
+/*menu sticky*/
+
+.data-sticky
+{
+	width: 100%;
+	z-index: 100;
+}
+
+/*Menu off-canvas*/
+
+#offCanvas
+{
+	background-color: black;
+}
+
+#offCanvas a
+{
+	color: white;
+}

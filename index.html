@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanoka Palooza</title>
+    <link rel="stylesheet" href="css/foundation-flex.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="icons/foundation-icons.css">
+  </head>
+  <body>
+
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+        <nav data-magellan>
+          <ul class="vertical menu" data-drilldown>
+            <li><a href="#tickets-container">Tickets</a></li>
+            <li>
+              <a href="#line-up-container">LineUp</a>
+              <ul class="vertical menu" id="menu-oculto">
+                <li><a data-toggle-dia="viernes" href="#line-up-container">Viernes</a></li>
+                <li><a data-toggle-dia="sabado" href="#line-up-container">Sábado</a></li>
+                <li><a data-toggle-dia="domingo" href="#line-up-container">Domingo</a></li>
+              </ul>
+            </li>
+            <li><a href="#info-container">Información</a></li>
+            <li><a href="#suscripcion-container">Suscribete</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+          <!--Social-->
+        <section id="social-container">
+            <div class="row align-center text-center">
+                <div class="column small-1">
+                  <a href="#" target="_blank">
+                    <i class="fi-social-facebook"></i>
+                  </a> 
+                </div>
+                <div class="column small-1">
+                  <a href="#" target="_blank">
+                    <i class="fi-social-twitter"></i>
+                  </a> 
+                </div>
+                <div class="column small-1">
+                  <a href="#" target="_blank">
+                    <i class="fi-social-instagram"></i>
+                  </a> 
+                </div>
+            </div>
+        </section>
+        <!--/Social-->
+
+        <!--Logo-->
+        <section id="logo-container">
+          <div class="callout text-center">
+              <h1>Kanokapalooza</h1>
+          </div>
+        </section>
+        <!--/Logo-->
+
+        <!--Menu-->
+        <section id="scroll-stricky" data-sticky-container>
+          <div class="data-sticky" data-sticky data-options="marginTop:0" data-sticky-on="small" data-top-anchor="scroll-stricky">
+            <nav id="menu-container" data-magellan>
+              <ul class="menu show-for-small-only align-spaced">
+                <li><a href="#" data-toggle="offCanvas">Menu</a></li>
+              </ul>
+              <ul class="dropdown menu align-spaced show-for-medium" data-dropdown-menu>
+                <li><a href="#tickets-container"><span class="menu-boton text-center"><i class="fi-ticket"></i></span>Tickets</a></li>
+                <li>
+                  <a href="#line-up-container"><span class="menu-boton text-center"><i class="fi-plus"></i></span>LineUp</a>
+                  <ul class="menu" id="menu-oculto">
+                    <li><a data-toggle-dia="viernes" href="#line-up-container">Viernes</a></li>
+                    <li><a data-toggle-dia="sabado" href="#line-up-container">Sábado</a></li>
+                    <li><a data-toggle-dia="domingo" href="#line-up-container">Domingo</a></li>
+                  </ul>
+                </li>
+                <li><a href="#info-container"><span class="menu-boton text-center"><i class="fi-info"></i></span>Información</a></li>
+                <li><a href="#suscripcion-container"><span class="menu-boton text-center"><i class="fi-mail"></i></span>Suscribete</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <!--/Menu-->
+
+        <!--CTA-->
+        <section id ="boton-action">
+          <div class="callout large text-center">
+            <a class="large hollow button" href="#tickets-container">Comprar Boletas</a>
+          </div>
+        </section>
+        <!--/CTA-->
+
+        <!--line Up-->
+        <section id="line-up-container" data-magellan-target="line-up-container">
+          <h3 class="text-center">Line Up</h3>
+          <ul class="tabs text-center" data-tabs id="line-up-tabs">
+            <li class="tabs-title is-active"><a href="#viernes">Viernes</a></li>
+            <li class="tabs-title"><a href="#sabado">Sábado</a></li>
+            <li class="tabs-title"><a href="#domingo">Domingo</a></li>
+          </ul>
+          <div class="tabs-content" data-tabs-content="line-up-tabs">
+            <div class="tabs-panel" id="viernes">
+              <div class="row"><!--Inicio Row-->
+                  <div class="small-12 medium-6 column"><!--Artista #1-->
+                      <div class="orbit" data-orbit>
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/oliver.jpg" alt="Oliver Heldens"></img>
+                                  <figcaption class="orbit-caption">Oliver Heldens</figcaption>
+                              </div>
+                          </div>
+                      </div>
+                  </div><!--/Cierre Artista #1-->
+                  <div class="small-12 medium-6 column"><!--Artista #2-->
+                      <div class="orbit" data-orbit>
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/Tiesto.jpg" alt="Dj Tiesto"></img>
+                                  <figcaption class="orbit-caption">Tiesto</figcaption>
+                              </div>
+                          </div>
+                      </div>
+                  </div><!--/Cierre Artista #2-->
+                  <div class="small-12 medium-6 column"><!--Artista #3-->
+                      <div class="orbit" data-orbit>
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/deadmau5.jpg" alt="Deadmau5"></img>
+                                  <figcaption class="orbit-caption">Deadmau5</figcaption>
+                              </div>
+                          </div>
+                      </div>
+                  </div><!--/Cierre Artista #3-->
+                  <div class="small-12 medium-6 column"><!--Artista #4-->
+                      <div class="orbit" data-orbit>
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/r3hab.jpg" alt="R3hab"></img>
+                                  <figcaption class="orbit-caption">R3hab</figcaption>
+                              </div>
+                          </div>
+                      </div>
+                  </div><!--/Cierre Artista #4-->
+              </div><!--/Cierre row-->
+            </div>
+            <div class="tabs-panel" id="sabado">
+             <div class="row"><!--Inicio Row-->
+                  <div class="small-12 medium-6 column"><!--Artista #1-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/Excision-8393.jpeg" alt="Excision DJ"></img>
+                                  <figcaption class="orbit-caption">Excision</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #1-->
+                  <div class="small-12 medium-6 column"><!--Artista #2-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/zomboy-sevlla.jpg" alt="Zomboy DJ"></img>
+                                  <figcaption class="orbit-caption">Zomboy</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #2-->
+                  <div class="small-12 medium-6 column"><!--Artista #3-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/code-pand.jpg" alt="Code: Pandorum"></img>
+                                  <figcaption class="orbit-caption">Code: Pandorum</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #3-->
+                  <div class="small-12 medium-6 column"><!--Artista #4-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/virtual riot.jpg" alt="Virtual Riot"></img>
+                                  <figcaption class="orbit-caption">Virtual Riot</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #4-->
+              </div><!--/Cierre row-->
+            </div>
+            <div class="tabs-panel" id="domingo">
+              <div class="row"><!--Inicio Row-->
+                  <div class="small-12 medium-6 column"><!--Artista #1-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/dj snake.jpg" alt="DJ Snake"></img>
+                                  <figcaption class="orbit-caption">DJ Snake</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #1-->
+                  <div class="small-12 medium-6 column"><!--Artista #2-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/alesso.jpg" alt="Alesso"></img>
+                                  <figcaption class="orbit-caption">Alesso</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #2-->
+                  <div class="small-12 medium-6 column"><!--Artista #3-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/the-chainsmokers.jpg" alt="The Chainsmokers"></img>
+                                  <figcaption class="orbit-caption">The Chainsmokers</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #3-->
+                  <div class="small-12 medium-6 column"><!--Artista #4-->
+                      <!--<div class="orbit" data-orbit>-->
+                          <div class="orbit-container">
+                              <div class="orbit-slide">
+                                  <img class="orbit-image" src="img/Galantis_-_Coachella_2014.jpg" alt="Galantis"></img>
+                                  <figcaption class="orbit-caption">Galantis</figcaption>
+                              </div>
+                          </div>
+                      <!--</div>-->
+                  </div><!--/Cierre Artista #4-->
+              </div><!--/Cierre row-->
+            </div>
+          </div>
+        </section>
+        <!--/line Up-->
+
+        <!--Compra de boletos-->
+
+        <section id="tickets-container" data-magellan-target="tickets-container">
+          <h3 class="text-center">Comprar Boletas</h3>
+          <div class="row">
+            <div class="small-10 medium-6 small-offset-1 medium-offset-3 column">
+              <ul class="pricing-table">
+                <li class="title">Platino</li>
+                <li class="price">$300K</li>
+                <li class="description">Para los tres dias del festival</li>
+                <li>Parqueadero Incluido</li>
+                <li>Participa sorteo Backstage</li>
+                <li>Dos bebidas gratis cada día</li>
+                <li><a class="button" href="#">Comprar Platino</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row" data-equalizer data-equalize-on="small">
+            <div class="small-6 medium-4 medium-offset-2 column">
+              <ul class="pricing-table">
+                <li class="title">Gold</li>
+                <li class="price">$200K</li>
+                <li class="description">Para los tres dias del festival</li>
+                <li data-equalizer-watch>pide gratis una bebida por dia, sitios autorizados</li>
+                <li>-</li>
+                <li>-</li>
+                <li><a class="button" href="#">Comprar Gold</a></li>
+              </ul>
+            </div>
+            <div class="small-6 medium-4 column">
+              <ul class="pricing-table">
+                <li class="title">Silver</li>
+                <li class="price">$150K</li>
+                <li class="description">Para los tres dias del festival</li>
+                <li data-equalizer-watch>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li><a class="button" href="#">Comprar Silver</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!--/Compra de boletos-->
+
+        <!--Suscripcion-->
+
+        <section id="suscripcion-container" data-magellan-target="suscripcion-container">
+          <h3 class="text-center">Suscríbete</h3>
+          <p class="text-center">Suscríbete, para recibir las ultimas noticias acerca del festival</p>
+          <form action="" method="" novalidate data-abide>
+              <div data-abide-error class="row columns small-12 medium-6 text-center error-container" style="display: none">
+                <small><i class="fi-alert"></i> El correo ingresado, no es valido</small>
+              </div>
+              <div class="row columns small-12 medium-6">
+                <div class="input-group">
+                    <span class="input-group-label"><i class="fi-mail"></i></span>
+                    <input class="input-group-field" type="email" name="email" placeholder="tucorreo@direccion.com" required></input>
+                    <div class="input-group-button">
+                       <input class="button" type="submit" value="Suscríbirse"></input>
+                    </div>
+                </div>
+              </div>
+          </form>
+        </section>
+
+        <!--/Suscripcion-->
+
+        <!--Información-->
+
+        <section id="info-container" data-magellan-target="info-container">
+          <h3 class="text-center">Información</h3>
+          <div class="map-container" data-interchange="[assets/map-mini.html, small], [assets/map.html, medium]"></div>
+        </section>
+
+
+        <!--/Información-->  
+      </div>
+    </div>
+  </div>
+
+      
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
